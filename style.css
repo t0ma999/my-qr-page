@@ -1,0 +1,158 @@
+/* Общие стили и сброс параметров */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Контейнер приложения (имитация экрана телефона на ПК) */
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: space-between;
+    padding: 40px 16px;
+}
+
+/* Шапка страницы */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 15px;
+    color: #8e8e93;
+    line-height: 1.4;
+}
+
+.emoji {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Список сотрудников */
+.staff-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: auto;
+    /* Прижимает футер к низу */
+}
+
+/* Карточка сотрудника */
+.staff-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Эффект нажатия/наведения */
+.staff-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.staff-card:active {
+    transform: translateY(0);
+    background-color: #fafafa;
+}
+
+/* Аватар */
+.avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+    background-color: #e5e5ea;
+    /* Плейсхолдер на случай долгой загрузки */
+}
+
+/* Информация */
+.info {
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 14px;
+    color: #8e8e93;
+}
+
+/* Стрелка вправо */
+.arrow {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow svg {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 10px;
+    height: 18px;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e93;
+    font-size: 13px;
+}
+
+.footer-thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.heart-icon {
+    color: #8e8e93;
+    font-size: 16px;
+}
